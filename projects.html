@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+
+<body>
+<script id="replace_with_navbar" src="nav.js"></script>
+    
+    <h2 class="greeting-paragraph">Check Out My Projects!</h2>
+    <div>
+        <div class="container2">
+        <div class="column">
+            <h2 style="font-size: 25px;">Dancing PacMen</h2>
+            <img class="responsive" id="responsive" src="images/PacMen.png" alt="" goto="https://github.com/saro9588/Dancing-PacMen.git">
+        </div>
+        <div class="column">
+            <h2 style="font-size: 25px;">Moving Eyes</h2>
+            <img class="responsive" id="responsive" src="images/Screen Shot 2023-03-31 at 2.49.15 AM.png" alt="" goto="https://github.com/saro9588/Moving-Eyes.git">
+        </div>
+        <div class="column">
+            <h2 style="font-size: 25px;"> Boston Live Bus Tracker</h2>
+            <img class="responsive" id="responsive" src="images/Screen Shot 2023-03-31 at 2.12.34 AM.png" alt="" goto="https://github.com/saro9588/Live-Bus-Tracker-App.git">
+        </div>
+    </div>
+
+<script id="replace_with_footer" src="footer.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $( document ).ready(function() {
+            $(".responsive").click(function(e){
+                window.location = $(this).attr('goto');
+            });
+        });
+    </script>
+</body>
+
